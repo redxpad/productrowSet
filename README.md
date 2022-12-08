@@ -21,6 +21,6 @@
 Пример кода в файле getProductsExample.php
 
 ## Добавление товарной позиции
-Если не удалось найти товарную позицию в crm можно создать новую с помощью метода [catalog.product.add](https://dev.1c-bitrix.ru/rest_help/catalog/product/catalog_product_add.php), необходимо передать массив полей для создания новой позиции, поля name и iblockId являются обязательными.
+Если не удалось найти товарную позицию в crm можно создать новую с помощью метода [catalog.product.add](https://dev.1c-bitrix.ru/rest_help/catalog/product/catalog_product_add.php), необходимо передать массив полей для создания новой позиции, поля name и iblockId являются обязательными (чтобы узнать подходящий iblockId обратитесь к интегратору).
 В ответе метод вернет созданную товарную позицию вместе с его ID, который можно использовать в методе crm.deal.productrows.set в качестве PRODUCT_ID.
 Пример кода в файле addProductExample.php
